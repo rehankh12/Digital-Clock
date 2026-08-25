@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Courier New", Courier, monospace;
+      }
+      body {
+        color: white;
+        height: 100vh;
+
+        background:
+          radial-gradient(circle at 20% 20%, #3b1d68 0%, transparent 35%),
+          radial-gradient(circle at 80% 80%, #123d5c 0%, transparent 35%),
+          linear-gradient(135deg, #070711, #11111f);
+      }
+      .center {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .banner {
+        font-size: 100px;
+        font-weight: bolder;
+      }
+      #clock {
+        font-size: 100px;
+        font-weight: bolder;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      @media (max-width: 900px) {
+        .banner {
+          font-size: 40px;
+        }
+        #clock {
+          font-size: 50px;
+          font-weight: bolder;
+        }
+      }
+      @media (max-width: 400px) {
+        .banner {
+          font-size: 25px;
+        }
+        #clock {
+          font-size: 35px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="banner">Your local time</div>
+      <div id="clock"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
