@@ -2,7 +2,7 @@
 
 A simple digital clock built using HTML, CSS, and JavaScript.
 
-##Features
+## Features
 
 - Displays current local time
 - Updates every second
